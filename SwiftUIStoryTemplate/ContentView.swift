@@ -2,7 +2,7 @@ import SwiftUI
 
 // Use the relevant folders and swift files to code your chapter of the story. Keep ContentView as-is, unless you want a different type of navigation in your story.
 struct ContentView: View {
-    @State var hauntedCar = Car (make: "Dodge", model: "SRT", color: Color.blue)
+    @State var hauntedCar = Car (make: "Dodge", model: "SRT", color: Color.orange)
     var body: some View {
         TabView {
             Chapter1View()
@@ -13,7 +13,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Chapter 2", systemImage: "2.circle")
                 }
-            Chapter3View()
+            Chapter3View(car: $hauntedCar)
                 .tabItem {
                     Label("Chapter 3", systemImage: "3.circle")
                 }
