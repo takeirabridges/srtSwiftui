@@ -3,11 +3,21 @@ import SwiftUI
 struct Chapter3View: View {
     @Binding var car: Car
     var body: some View {
-        VStack {
-            Text("Chapter 3")
-            Image (systemName: "car.side")
-                .foregroundColor(car.color)
-            Text("car is going _ mph")
+            VStack {
+                       Text("The car speed is: ")
+                Text("\(car.currentSpeed)")
+                           .font(.largeTitle)
+                       
+                    Image("srtsketch")
+//                Image(systemName: "car")
+                    .resizable()
+                    .scaledToFit()
+                    .foregroundColor(car.color)
+
+                           .font(.largeTitle)
+                           .onTapGesture {
+                               car.accelerate()
+                           }
         }
     }
 }
