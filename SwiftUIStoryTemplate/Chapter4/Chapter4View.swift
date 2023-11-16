@@ -2,10 +2,17 @@ import SwiftUI
 
 struct Chapter4View: View {
     var body: some View {
-        Text("Chapter 4")
-    }
-}
+        TabView{
+            page1()
+            page2()
 
-#Preview {
+        }
+        .tabViewStyle(.page)
+        .ignoresSafeArea()
+    }
+    }
+struct Chapter4View_Previews: PreviewProvider{
+    static var previews: some View {
     Chapter4View()
+}
 }
