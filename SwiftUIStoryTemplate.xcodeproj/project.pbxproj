@@ -16,6 +16,9 @@
 		5DE6F6822AFAE3EA004ABB4F /* Chapter3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6F6812AFAE3EA004ABB4F /* Chapter3View.swift */; };
 		5DE6F6842AFAE3EF004ABB4F /* Chapter4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6F6832AFAE3EF004ABB4F /* Chapter4View.swift */; };
 		5DE6F6862AFAE3F3004ABB4F /* Chapter5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6F6852AFAE3F3004ABB4F /* Chapter5View.swift */; };
+		E8DC86F12B0695660058EAE7 /* pageONE.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DC86F02B0695660058EAE7 /* pageONE.swift */; };
+		E8DC86F32B0696530058EAE7 /* pageTWO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DC86F22B0696530058EAE7 /* pageTWO.swift */; };
+		E8DC86F52B06966A0058EAE7 /* pageTHREE.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DC86F42B06966A0058EAE7 /* pageTHREE.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		5DE6F6812AFAE3EA004ABB4F /* Chapter3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3View.swift; sourceTree = "<group>"; };
 		5DE6F6832AFAE3EF004ABB4F /* Chapter4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4View.swift; sourceTree = "<group>"; };
 		5DE6F6852AFAE3F3004ABB4F /* Chapter5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter5View.swift; sourceTree = "<group>"; };
+		E8DC86F02B0695660058EAE7 /* pageONE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageONE.swift; sourceTree = "<group>"; };
+		E8DC86F22B0696530058EAE7 /* pageTWO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageTWO.swift; sourceTree = "<group>"; };
+		E8DC86F42B06966A0058EAE7 /* pageTHREE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageTHREE.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				5DE6F67D2AFAE3DF004ABB4F /* Chapter1View.swift */,
+				E8DC86F02B0695660058EAE7 /* pageONE.swift */,
+				E8DC86F22B0696530058EAE7 /* pageTWO.swift */,
+				E8DC86F42B06966A0058EAE7 /* pageTHREE.swift */,
 			);
 			path = Chapter1;
 			sourceTree = "<group>";
@@ -193,12 +202,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DE6F6822AFAE3EA004ABB4F /* Chapter3View.swift in Sources */,
+				E8DC86F32B0696530058EAE7 /* pageTWO.swift in Sources */,
 				5DE6F6842AFAE3EF004ABB4F /* Chapter4View.swift in Sources */,
+				E8DC86F52B06966A0058EAE7 /* pageTHREE.swift in Sources */,
 				5DE6F6722AFADF05004ABB4F /* ContentView.swift in Sources */,
 				5DE6F6802AFAE3E6004ABB4F /* Chapter2View.swift in Sources */,
 				5DE6F6862AFAE3F3004ABB4F /* Chapter5View.swift in Sources */,
 				5DE6F67E2AFAE3DF004ABB4F /* Chapter1View.swift in Sources */,
 				5DE6F6702AFADF05004ABB4F /* SwiftUIStoryTemplateApp.swift in Sources */,
+				E8DC86F12B0695660058EAE7 /* pageONE.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
