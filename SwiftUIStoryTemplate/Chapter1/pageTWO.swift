@@ -16,7 +16,7 @@ struct pageTWO: View {
 private var animation: Animation {
     .easeIn
     .speed(0.08)
-    .repeatForever()
+    .repeatForever(autoreverses: true)
 }
 
 var body: some View {

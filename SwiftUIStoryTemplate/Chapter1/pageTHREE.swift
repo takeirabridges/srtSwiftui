@@ -10,9 +10,13 @@ import SwiftUI
 
 struct pageTHREE: View {
     
-    @State private var printTwoShowing = false
-    @State private var printThreeShowing = false
-    @State private var printfourShowing = false
+    @State private var offset1 = -700.0
+    
+    private var animation: Animation {
+        .easeIn
+        .speed(0.05)
+        .repeatForever(autoreverses: false)
+    }
     
     var body: some View {
         ZStack {
@@ -25,13 +29,36 @@ struct pageTHREE: View {
                 .foregroundColor(.white)
                 .padding()
             
-            ZStack{
-                VStack{
-                       
-                        }
-                    }
+            VStack{
+                    Rectangle()
+                        .frame(width: 95, height: 125)
+                        .foregroundColor(.red)
+                        .offset(x:-80,y:0)
+                        .rotationEffect(Angle(degrees: 30))
+                    Rectangle()
+                        .frame(width: 95, height: 125)
+                        .foregroundColor(.red)
+                        .offset(x:80,y:0)
+                        .rotationEffect(Angle(degrees: -30))
+                    Rectangle()
+                        .frame(width: 95, height: 125)
+                        .foregroundColor(.red)
+                        .offset(x:-80,y:0)
+                        .rotationEffect(Angle(degrees: 30))
+                    Rectangle()
+                        .frame(width: 95, height: 125)
+                        .foregroundColor(.red)
+                        .offset(x:80,y:0)
+                        .rotationEffect(Angle(degrees: -30))
+                    
+                } .offset(y: offset1)
+            } .onAppear {
+                withAnimation(animation) {
+                    offset1 += 1500
                 }
+                
             }
+        }
     }
 #Preview {
     pageTHREE()
