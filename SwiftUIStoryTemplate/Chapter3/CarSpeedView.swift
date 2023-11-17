@@ -8,24 +8,41 @@
 import Foundation
 import SwiftUI
 struct CarSpeedView: View {
-    @State private var currentSpeed = 10
+    @State private var currentSpeed = 0
+    @State private var offset2 = 400.0
     
-    var body: some View {
-        VStack {
-            Text("The car speed is: ")
-            Text("\(currentSpeed)")
-                .font(.largeTitle)
-            
-            Image("srtsketch")
-         .resizable()
-         .scaledToFit()
-                .font(.largeTitle)
-                .onTapGesture {
-                    currentSpeed = currentSpeed + 10
-                }
+    private var animation: Animation {
+        .easeIn
+        .speed(0.2)
+        .repeatForever(autoreverses: false)
+    }
+    
+        
+        var body: some View {
+            VStack {
+                Text("MPH: ")
+                Text("\(currentSpeed)")
+                    .font(.largeTitle)
+                
+                Image("srtsketch")
+                    .resizable()
+                    .scaledToFit()
+                    .offset(x: offset2)
+                    .font(.largeTitle)
+                    .onTapGesture {
+                        currentSpeed = currentSpeed + 60
+                    }
+                
+                    .onAppear {
+                        withAnimation(animation) {
+                            offset2 -= 500.0
+                            
+                        }
+                    }
+            }
         }
     }
-}
+
 #Preview {
     CarSpeedView()
 }

@@ -12,9 +12,9 @@ struct Car {
     var make: String
     var model: String
     var color: Color
-    var currentSpeed: Int = 10
+    var currentSpeed: Int = 0
     
     mutating func accelerate () {
-        currentSpeed += 10
+        currentSpeed += 60
     }
 }
